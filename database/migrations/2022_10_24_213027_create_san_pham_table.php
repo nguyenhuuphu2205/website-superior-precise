@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateSanPhamTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('san_pham', function (Blueprint $table) {
+            $table->id();
+            $table->string('ten');
+            $table->string('ten_khong_dau');
+            $table->string('ma_san_pham');
+            $table->string('hinh_anh');
+            $table->text('mo_ta');
+            $table->bigInteger('danh_muc');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('san_pham');
+    }
+}

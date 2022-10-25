@@ -38,7 +38,7 @@
                             <td>
                                 {{$sc->email}}
                             </td>
-                            <td>{{$sc->password}}</td>
+                            <td>*************</td>
                            
                             <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/xoa/{{$sc->id}}"> Xóa</a></td>
                             <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/sua/{{$sc->id}}">Đổi password</a></td>

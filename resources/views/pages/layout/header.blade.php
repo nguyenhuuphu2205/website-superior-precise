@@ -20,7 +20,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <img data-src="assets/img/logo.png" width="70px" class="img-fluid lozad"/>
-<h1 class="logo mr-auto"><a href="trangchu">Cường Hải<span>.</span></a> <br/> <a style="font-size: 0.8rem; color: red; text-shadow: saddlebrown;" class="d-block"><br>Hotline: {{$thongtinwebsite->sdt}}</a></h1>
+<h1 class="logo mr-auto"><a href="trangchu">Superior Precise<span>.</span></a> <br/> <a style="font-size: 0.8rem; color: red; text-shadow: saddlebrown;" class="d-block"><br>Hotline: {{$thongtinwebsite->sdt}}</a></h1>
       
      
     
@@ -32,7 +32,7 @@
         <ul>
           <li class="active"><a href="trangchu">Trang chủ</a></li>
           <li><a href="trangchu#about">Giới thiệu</a></li>
-          <li class="drop-down"><a href="#thietbi">Thiết bị</a>
+          <li class="drop-down"><a href="#thietbi">Sản phẩm</a>
             <ul>
               <li><a href="danh-muc/tat-ca">Tất cả</a></li>
               @foreach($danhmuccha as $dm)
@@ -55,7 +55,7 @@
             
             </ul>
           </li>
-          <li><a href="trangchu#sanphamin">Sản phẩm in</a></li>
+          <li><a href="trangchu#vanphong">Văn phòng</a></li>
           <li><a href="video-san-xuat-in-an">Video</a></li>
           <li><a href="trangchu#khachhang">Khách hàng</a></li>
          

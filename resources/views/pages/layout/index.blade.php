@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Công ty TNHH Gia Công, Thương Mại và Dịch Vụ Cường Hải</title>
-  <meta content="Chuyên nhận in gia công trên mọi vật liệu và cung cấp các loại máy in, vật liệu in, máy phụ trợ." name="description">
-  <meta content="in gia công trên vật liệu, cung cấp máy in,  vật liệu in, máy phụ trợ." name="keywords">
-  <meta property="og:image" name="ogimage" content="http://incuonghai.bkav.ai/assets/img/logo.png">
+  <title>Công Ty TNHH SUPERIOR PRECISE</title>
+  <meta content="Chuyên sản xuất và cung cấp các sản phẩm BOBBIN và các sản phẩm về  khuôn ép." name="description">
+  <meta content="Chuyên sản xuất và cung cấp các sản phẩm BOBBIN và các sản phẩm về  khuôn ép." name="keywords">
+  <meta property="og:image" name="ogimage" content="http://superiorprecise.com/assets/img/logo.png">
   <base href="{{asset('')}}">
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">

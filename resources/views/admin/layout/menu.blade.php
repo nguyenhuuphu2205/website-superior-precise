@@ -13,6 +13,18 @@
                 <!-- /input-group -->
             </li>
             <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Hình ảnh cty<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="admin/hinhanhcty/danhsach">Danh Sách</a>
+                    </li>
+                    <li>
+                        <a href="admin/hinhanhcty/them">Thêm</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Danh Mục<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
@@ -25,41 +37,18 @@
                 <!-- /.nav-second-level -->
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Máy in<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Sản phẩm<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="admin/mayin/danhsach">Danh Sách</a>
+                        <a href="admin/sanpham/danhsach">Danh Sách</a>
                     </li>
                     <li>
-                        <a href="admin/mayin/them">Thêm</a>
+                        <a href="admin/sanpham/them">Thêm</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Sản phẩm in<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="admin/sanphamin/danhsach">Danh Sách</a>
-                    </li>
-                    <li>
-                        <a href="admin/sanphamin/them">Thêm</a>
-                    </li>
-                </ul>
-                <!-- /.nav-second-level -->
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Vật liệu in<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="admin/vatlieuin/danhsach">Danh Sách</a>
-                    </li>
-                    <li>
-                        <a href="admin/vatlieuin/them">Thêm</a>
-                    </li>
-                </ul>
-                <!-- /.nav-second-level -->
-            </li>
+
             <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Video<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">

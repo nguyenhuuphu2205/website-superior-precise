@@ -25,11 +25,10 @@
             <div class="mb-5">
               <h5>Tag </h5>
               <div class="tagcloud">
-                <a  class="tag-cloud-link text-dark">Máy in</a>
-                <a class="tag-cloud-link  text-dark">In ấn</a>
-                <a  class="tag-cloud-link  text-dark">In gia công</a>
-                <a class="tag-cloud-link  text-dark">Vật tư in</a>
-                <a  class="tag-cloud-link  text-dark">Thiết bị in</a>
+                <a  class="tag-cloud-link text-dark">Bobbin</a>
+                <a class="tag-cloud-link  text-dark">Gia công nhựa</a>
+                <a  class="tag-cloud-link  text-dark">Nhựa</a>
+                <a class="tag-cloud-link  text-dark">Superior Precise.</a>
                 
               </div>
             </div>

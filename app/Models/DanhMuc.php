@@ -18,7 +18,7 @@ class DanhMuc extends Model
     public function danhMucCon(){
         return $this->hasMany('App\Models\DanhMuc','danh_muc_cha','id');
     }
-    public function mayIn(){
-        return $this->hasMany('App\Models\MayIn','danh_muc','id');
+    public function sanPham(){
+        return $this->hasMany('App\Models\SanPham','danh_muc','id');
     }
 }

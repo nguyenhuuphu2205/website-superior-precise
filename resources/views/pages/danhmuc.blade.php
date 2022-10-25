@@ -27,20 +27,20 @@
         
         <!-- Page Content  -->
         <div id="content" class="p-4">
-            @if(count($mayins) ==0)
+            @if(count($sanphams) ==0)
             <h3>Chưa có sản phẩm</h3>
             @endif 
            
           <div class="row">
             
-              @foreach($mayins as $mayin)
+              @foreach($sanphams as $sanpham)
             <div class="col-md-4 pl-1 pr-1 pb-2">
               <div class="card" style="height: 100%">
-              <img class="card-img-top lozad" data-src="upload/mayin/{{$mayin->hinh_anh}}" alt="{{$mayin->ten_khong_dau}}" style="height: 320px; width:100%" >
+              <img class="card-img-top lozad" data-src="upload/sanpham/{{$sanpham->hinh_anh}}" alt="{{$sanpham->ten_khong_dau}}" style="height: 320px; width:100%" >
                 <div class="card-body mb-3">
-                  <h5 class="card-title">{{$mayin->ten}}</h5>
-                <p class="card-text text-danger">Liên hệ: {{$thongtinwebsite->sdt}}</p>
-                <a href="may-in/{{$mayin->id}}/{{$mayin->ten_khong_dau}}" class="btn btn-outline-primary ">Xem chi tiết</a>
+                  <h5 class="card-title">{{$sanpham->ten}}</h5>
+                <!-- <p class="card-text text-danger">Liên hệ: {{$thongtinwebsite->sdt}}</p> -->
+                <a href="san-pham/{{$sanpham->id}}/{{$sanpham->ten_khong_dau}}" class="btn btn-outline-primary ">Xem chi tiết</a>
                 </div>
               </div>
             </div>

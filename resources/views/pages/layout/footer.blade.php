@@ -21,7 +21,7 @@
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <img data-src="assets/img/logo.png" width="90px" class="img-fluid d-inline lozad"/>
-            <h3 class="d-inline">CƯỜNG HẢI<span>.</span></h3>
+            <h3 class="d-inline">Superior Precise<span>.</span></h3>
           <p class="border-bottom font-weight-bold">{{$thongtinwebsite->mo_ta}}</p>
             <p>
               <br>
@@ -37,8 +37,8 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="trangchu">Trang chủ</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="trangchu#about">Giới thiệu</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="danh-muc/tat-ca">Thiết bị</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="trangchu#sanphamin">Sản phẩm in</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="danh-muc/tat-ca">Sản phẩm</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="trangchu#vanphong">Văn phòng</a></li>
 	      <li><i class="bx bx-chevron-right"></i> <a href="trangchu#khachhang">Khách hàng</a></li>
 		 <li><i class="bx bx-chevron-right"></i> <a href="video-san-xuat-in-an">Video</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="trangchu#contact">Liên hệ</a></li>
@@ -73,14 +73,14 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Cường Hải</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Superior Precise</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-        Designed by <a href="#">2020</a>
+        Designed by <a href="#">2022</a>
       </div>
     </div>
 

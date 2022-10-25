@@ -2,13 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DanhMucController;
-use App\Http\Controllers\MayInController;
+use App\Http\Controllers\SanPhamController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\SanPhamInController;
 use App\Http\Controllers\ThongTinWebsiteController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VatLieuInController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\HinhAnhCtyController;
 use App\Models\SanPhamIn;
 
 /*
@@ -35,32 +36,14 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function (){
         Route::get('xoa/{id}',[DanhMucController::class,'xoa']);
         Route::get('tenkhongdau',[DanhMucController::class,'tenKhongDau']);
     }) ;
-    Route::group(['prefix'=>'mayin'],function (){
-        Route::get('them',[MayInController::class,'getThem']);
-        Route::get('sua/{id}',[MayInController::class,'getSua']);
-        Route::post('sua/{id}',[MayInController::class,'postSua']);
-        Route::get('danhsach',[MayInController::class,'danhsach']);
-        Route::post('them',[MayInController::class,'postThem']);
-        Route::get('xoa/{id}',[MayInController::class,'xoa']);
-        Route::get('tenkhongdau',[MayInController::class,'tenKhongDau']);
-    }) ;
-    Route::group(['prefix'=>'vatlieuin'],function (){
-        Route::get('them',[VatLieuInController::class,'getThem']);
-        Route::get('sua/{id}',[VatLieuInController::class,'getSua']);
-        Route::post('sua/{id}',[VatLieuInController::class,'postSua']);
-        Route::get('danhsach',[VatLieuInController::class,'danhsach']);
-        Route::post('them',[VatLieuInController::class,'postThem']);
-        Route::get('xoa/{id}',[VatLieuInController::class,'xoa']);
-        Route::get('tenkhongdau',[VatLieuInController::class,'tenKhongDau']);
-    }) ;
-    Route::group(['prefix'=>'sanphamin'],function (){
-        Route::get('them',[SanPhamInController::class,'getThem']);
-        Route::get('sua/{id}',[SanPhamInController::class,'getSua']);
-        Route::post('sua/{id}',[SanPhamInController::class,'postSua']);
-        Route::get('danhsach',[SanPhamInController::class,'danhsach']);
-        Route::post('them',[SanPhamInController::class,'postThem']);
-        Route::get('xoa/{id}',[SanPhamInController::class,'xoa']);
-        Route::get('tenkhongdau',[SanPhamInController::class,'tenKhongDau']);
+    Route::group(['prefix'=>'sanpham'],function (){
+        Route::get('them',[SanPhamController::class,'getThem']);
+        Route::get('sua/{id}',[SanPhamController::class,'getSua']);
+        Route::post('sua/{id}',[SanPhamController::class,'postSua']);
+        Route::get('danhsach',[SanPhamController::class,'danhsach']);
+        Route::post('them',[SanPhamController::class,'postThem']);
+        Route::get('xoa/{id}',[SanPhamController::class,'xoa']);
+        Route::get('tenkhongdau',[SanPhamController::class,'tenKhongDau']);
     }) ;
     Route::group(['prefix'=>'user'],function (){
         Route::get('them',[UserController::class,'getThem']);
@@ -84,6 +67,14 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function (){
         Route::post('them',[VideoController::class,'postThem']);
         Route::get('xoa/{id}',[VideoController::class,'xoa']);
     }) ;
+    Route::group(['prefix'=>'hinhanhcty'],function (){
+        Route::get('them',[HinhAnhCtyController::class,'getThem']);
+        Route::get('sua/{id}',[HinhAnhCtyController::class,'getSua']);
+        Route::post('sua/{id}',[HinhAnhCtyController::class,'postSua']);
+        Route::get('danhsach',[HinhAnhCtyController::class,'danhsach']);
+        Route::post('them',[HinhAnhCtyController::class,'postThem']);
+        Route::get('xoa/{id}',[HinhAnhCtyController::class,'xoa']);
+    }) ;
  });
 
  //Route for fontend
@@ -91,10 +82,9 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function (){
  Route::get('trangchu',[PageController::class,'trangchu']);
  Route::get('danh-muc/tat-ca',[PageController::class,'tatca']);
  Route::get('danh-muc/{id}/{ten_khong_dau}',[PageController::class,'danhmuc']);
- Route::get('may-in/{id}/{ten_khong_dau}',[PageController::class,'mayin']);
- Route::get('vat-lieu-in/tat-ca',[PageController::class,'vatlieuinAll']);
- Route::get('vat-lieu-in/{id}/{ten_khong_dau}',[PageController::class,'vatlieuin']);
- Route::get('san-pham-in/{id}/{ten_khong_dau}',[PageController::class,'sanphamin']);
+ Route::get('san-pham/{id}/{ten_khong_dau}',[PageController::class,'sanpham']);
+ Route::get('van-phong/tat-ca',[PageController::class,'vanphongAll']);
+ Route::get('van-phong/{id}/{ten_khong_dau}',[PageController::class,'vanphong']);
  Route::post('tim-kiem',[PageController::class,'timkiem']);
  Route::get('video-san-xuat-in-an',[PageController::class,'video']);
 

@@ -94,7 +94,7 @@ class UserController extends Controller
             ]);
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password]))
         {
-            return redirect('admin/mayin/danhsach');
+            return redirect('admin/sanpham/danhsach');
         }
         else
             return redirect('admin/dangnhap')->with('thongbao','Đăng nhập thất bại');

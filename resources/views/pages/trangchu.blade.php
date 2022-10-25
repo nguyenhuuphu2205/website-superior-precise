@@ -3,13 +3,13 @@
      <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1> <span style="text-shadow: 1px 1px #1a1b1a;">CÔNG TY TNHH GIA CÔNG, THƯƠNG MẠI & DỊCH VỤ CƯỜNG HẢI</span>
+      <h1> <span style="text-shadow: 1px 1px #1a1b1a;">CÔNG TY TNHH SUPERIOR PRECISE</span>
       </h1>
       <h2 style=" text-shadow: 1px 1px #1a1b1a; color:red">{{$thongtinwebsite->mo_ta}}</h2>
       <div class="d-flex">
         <a href="trangchu#about" class="btn-get-started scrollto">Giới thiệu</a>
         <!-- <a href="#about" class="btn-get-started scrollto">Máy in</a> -->
-        <a href="https://youtu.be/ShV1ujK-6gE" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" > Video Sản Xuất <i class="icofont-play-alt-2"></i></a>
+        <a href="https://youtu.be/P7bJHT4adtA" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" > Video Sản Xuất <i class="icofont-play-alt-2"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -31,50 +31,43 @@
             <img data-src="assets/img/about.png" class="img-fluid lozad" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-primary">CÔNG TY TNHH GIA CÔNG, THƯƠNG MẠI DỊCH VỤ CƯỜNG HẢI</h3>
+            <h3 class="text-primary">CÔNG TY TNHH SUPERIOR PRECISE</h3>
             <p class="font-italic">
-              Là công ty chuyên cung cấp các loại máy in, máy phụ trợ, chuyên nhận in gia công trên mọi vật liệu(nhựa, thủy tinh, sứ, linh kiện điện tử ...):
+            Với nhiều năm kinh nghiệm, công ty chúng tôi chuyên sản xuất và cung cấp các sản phẩm BOBBIN và các sản phẩm về khuôn ép.
             </p>
             <ul>
-              <li>
+            <li>
                 <i class="bx bx-printer"></i>
                 <div>
-                  <h5>MÁY IN TAMPO (PAD)</h5>
-                  <p>Với khả năng in trên mọi chất liệu và bề mặt có hình dạng không đồng đều như cong, lồi, lõm,..: nhựa, thủy tinh, gốm sứ, linh kiện điện tử, đồ chơi,..</p>
+                  <h5> NHÂN SỰ CHẤT LƯỢNG CAO </h5>
+                  <p>Trình độ đại học: 2 người, trình độ cao đẳng: 3 người, kỹ thuật: 3 người, lao động phổ thông: 35 người.</p>
                 </div>
               </li>
               <li>
                 <i class="bx bx-printer"></i>
                 <div>
-                  <h5>Máy In Lưới</h5>
-                  <p>In trên các vật liệu có bề mặt phẳng như: in giấy, kính, vải, túi,...; Máy in lụa tròn in trên các sản phẩm hình tròn như: chai, lọ, cốc, lọ mỹ phẩm,...</p>
+                  <h5> CHẤT LƯỢNG VÀ UY TÍN LÀ HÀNG ĐẦU </h5>
+                  <p>Kể từ khi thành lập, chúng tôi tuân thủ chính sách kinh doanh cùng thắng bằng chất lượng, uy tín và định hướng theo nhu cầu thị trường</p>
                 </div>
               </li>
               <li>
                 <i class="bx bx-printer"></i>
                 <div>
-                  <h5> MÁY ÉP NHŨ</h5>
-                  <p>Ép lên các sản phẩm như lọ, giấy, thước...và các loại máy khác.</p>
+                  <h5> CÔNG NGHỆ TIÊN TIẾN HIỆN ĐẠI </h5>
+                  <p> Lấy phát triển sản phẩm làm đầu tàu, chiến lược phát triển dựa trên công nghệ tiên tiến và dịch vụ chân thành, hợp tác trung thực với khách hàng, chung tay vì tương lai. </p>
                 </div>
               </li>
               <li>
                 <i class="bx bx-printer"></i>
                 <div>
-                  <h5> MÁY PHỤ TRỢ</h5>
-                  <p>Máy căng lưới, máy chụp bản, tủ sấy, máy sấy băng tải, máy sấy UV,...</p>
+                  <h5>SẢN PHẨM BOBBIN NHỰA</h5>
+                  <p>Cung cấp đa dạng các sản phẩm Bobbin, đa dạng màu sắc, kích cỡ: Bobbin vòng ngoài 330 vòng, 380 vòng... </p>
                 </div>
               </li>
-              <li>
-                <i class="bx bx-printer"></i>
-                <div>
-                  <h5>NHẬN IN GIA CÔNG TRÊN MỌI VẬT LIỆU</h5>
-                  <p>Nhựa, thủy tinh, điện thoại, sứ, gỗ....</p>
-                </div>
-              </li>
+
             </ul>
             <p class="text-justify">
-              Ngoài ra công ty chúng tôi còn cung cấp các vật tư in lưới, in tampo: Mực, dao gạt mực, keo chụp bản, dung môi ... Mặt khác công ty chúng tôi còn nhận gia công căng khung chụp bản, chế bản in tampo (pad), ăn mòn các sản phẩm nhôm, inox,..
-              Nhận in gia công theo yêu cầu của khách hàng.
+            Ngoài ra chúng tôi còn nhận in gia công tất cả các sản phẩm nhựa ép theo yêu cầu của khách hàng, đa dạng mẫu mã, mầu sắc  và kích cỡ.
             </p>
           </div>
         </div>
@@ -139,15 +132,15 @@
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="icofont-printer"></i>
-              <span data-toggle="counter-up">122</span>
-              <p>Loại máy</p>
+              <span data-toggle="counter-up">50</span>
+              <p>Loại sản phẩm</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="icofont-paper"></i>
-              <span data-toggle="counter-up">521</span>
+              <span data-toggle="counter-up">5210</span>
               <p>Đơn hàng hoàn thành</p>
             </div>
           </div>
@@ -163,7 +156,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
+              <span data-toggle="counter-up">43</span>
               <p>Nhân viên</p>
             </div>
           </div>
@@ -180,7 +173,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 class="text-secondary">THIẾT BỊ</h2>
+          <h2 class="text-secondary">SẢN PHẨM</h2>
         <h3 class="text-primary">{{$danhmuc->ten}}</h3>
         
           
@@ -190,7 +183,7 @@
           <?php 
           $i=0;
           ?>
-          @foreach($danhmuc->mayIn as $may)
+          @foreach($danhmuc->sanPham as $may)
           <?php 
           if($i==4){
           break;
@@ -200,16 +193,16 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" >
             <div class="member">
               <div class="member-img" >
-              <img data-src="upload/mayin/{{$may->hinh_anh}}" class="img-fluid lozad" alt="{{$may->ten_khong_dau}}" style="height: 300px; width:100%">
+              <img data-src="upload/sanpham/{{$may->hinh_anh}}" class="img-fluid lozad" alt="{{$may->ten_khong_dau}}" style="height: 300px; width:100%">
                 <div class="social">
                  
-                  <a href="may-in/{{$may->id}}/{{$may->ten_khong_dau}}"><i class="icofont-info"></i></a>
+                  <a href="san-pham/{{$may->id}}/{{$may->ten_khong_dau}}"><i class="icofont-info"></i></a>
 
                 </div>
               </div>
               <div class="member-info " >
                 <h4>{{$may->ten}}</h4>
-              <a href="may-in/{{$may->id}}/{{$may->ten_khong_dau}}">Xem chi tiết</a>
+              <a href="san-pham/{{$may->id}}/{{$may->ten_khong_dau}}">Xem chi tiết</a>
               </div>
             </div>
           </div>
@@ -227,200 +220,20 @@
 
       </div>
       @endforeach
-      {{-- <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-        
-          <h3 class="text-primary">Máy In TAMPO</h3>
-        
-          
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/printer/may5.png" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4>Máy in tampo 8 màu bán tự động</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/printer/may6.png" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4 >máy in tampo đa chức năng 16 màu băng tải</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/printer/may7.png" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4 >Máy in tampo 2 màu băng tải</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/printer/may8.png" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4 >Máy in Tampo 8 màu đa chức năng</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-         
-
-        </div>
-        <div class="row justify-content-center">
-          <p class=""><a href="#" class="text-danger">Xem thêm</a></p>
-        </div>
-        <hr>
-        
-
-      </div>
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-        
-          <h3 class="text-primary">Vật Tư In Đặc Chủng</h3>
-        
-          
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/vat-tu/vat-tu-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4>Mực In</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/vat-tu/vat-tu-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4 >Dung môi in</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/vat-tu/vat-tu-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4 >Lưỡi dao gạt mực</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/vat-tu/vat-tu-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                 
-                  <a href=""><i class="icofont-info"></i></a>
-
-                </div>
-              </div>
-              <div class="member-info ">
-                <h4 >Lưới (lụa)</h4>
-               <a href="#">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-         
-
-        </div>
-        <div class="row justify-content-center">
-          <p class=""><a href="#" class="text-danger">Xem thêm</a></p>
-        </div>
-        <hr>
-        
-
-      </div> --}}
     </section><!-- End Team Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="sanphamin" class="portfolio">
+      <section id="vanphong" class="portfolio">
         <div class="container" data-aos="fade-up">
   
           <div class="section-title">
-            <h2 class="text-secondary">Gia Công</h2>
-            <h3 class="text-primary">Nhận In Gia Công Vật Liệu</h3>
-            <p>Các sản phẩm đã in gia công của chúng tôi cho các khách hàng.</p>
+            <h2 class="text-secondary">Văn Phòng</h2>
+            <h3 class="text-primary">Văn Phòng và Xưởng</h3>
+            <!-- <p>Văn Phòng và xưởng của chúng tôi</p> -->
           </div>
   
           <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">Tất cả</li>
-                @foreach($vatlieuins as $vatlieu)
-              <li data-filter=".filter-{{$vatlieu->id}}">{{$vatlieu->ten}}</li>
-                @endforeach
-                {{-- <li data-filter=".filter-card">Sứ</li>
-                <li data-filter=".filter-web">Kim Loại</li> --}}
-              </ul>
             </div>
           </div>
   
@@ -428,27 +241,25 @@
             <?php 
               $count_san_pham_in =0
               ?>
-            @foreach($vatlieuins as $vatlieu)
-              @foreach($vatlieu->sanPhamIn as $sp)
+              @foreach($hinhanhctys as $sp)
               <?php
               if($count_san_pham_in ==3){
               break;
               }
               $count_san_pham_in ++;
               ?>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-{{$vatlieu->id}} ">
-              <img data-src="upload/sanphamin/{{$sp->hinh_anh}}"  class="lozad" width="100%" height="450px">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-{{$sp->ten}} ">
+              <img data-src="upload/hinhanhcty/{{$sp->hinh_anh}}"  class="lozad" width="100%" height="450px">
                 <div class="portfolio-info">
                <div>
                 <h4>{{$sp->ten}}</h4>
                  </div>
-                  <a href="upload/sanphamin/{{$sp->hinh_anh}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-zoom-in"></i></a>
-                  <a href="san-pham-in/{{$sp->id}}/{{$sp->ten_khong_dau}}" class="details-link" title="More Details"><i class="bx bx-info-circle"></i></a>
+                  <a href="upload/hinhanhcty/{{$sp->hinh_anh}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                  <a href="van-phong/tat-ca" class="details-link" title="More Details"><i class="bx bx-info-circle"></i></a>
                 </div>
               </div>
 
               @endforeach
-            @endforeach
          
   
   
@@ -456,7 +267,7 @@
   
           </div>
           <div class="row justify-content-center">
-            <p class=""><a href="vat-lieu-in/tat-ca" class="text-danger">Xem thêm</a></p>
+            <p class=""><a href="van-phong/tat-ca" class="text-danger">Xem thêm</a></p>
           </div>
   
         </div>
@@ -469,23 +280,23 @@
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
-            <img data-src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img lozad" alt="">
-            <h3>Hồng Phước</h3>
-            <h4>Ceo &amp; Founder Cpro VN</h4>
+            <img data-src="assets/img/clients/samsungceo.png" class="testimonial-img lozad" alt="">
+            <h3>Gregory-Lee</h3>
+            <h4>Giám đốc marketing &amp; CEO Samsung VN</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Chúng tôi rất hài lòng với chất lượng sản phẩm và dịch vụ của công ty. Công ty làm việc rất chuyên nghiệp. Chúng tôi rất hài lòng về các thiết bị máy in của công ty.
+              Chúng tôi rất hài lòng với chất lượng sản phẩm và dịch vụ của công ty. Công ty làm việc rất chuyên nghiệp.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
 
           <div class="testimonial-item">
-            <img data-src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img lozad" alt="">
-            <h3>Nguyễn Phan</h3>
-            <h4>CEO Fortune Host</h4>
+            <img data-src="assets/img/clients/kazhira-ceo-sony.jpg" class="testimonial-img lozad" alt="">
+            <h3>Kazhira</h3>
+            <h4>CEO &amp; Founder Sony VN</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Tiến độ in của công ty rất nhanh, chất lượng vượt ngoài mong đợi. Màu sắc in rất rõ nét. Sẽ thường xuyên hợp tác với công ty.
+              Tiến độ sản xuất của công ty rất nhanh, chất lượng vượt ngoài mong đợi. Sẽ thường xuyên hợp tác với công ty.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -508,19 +319,19 @@
 
           <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
           
-            <img data-src="assets/img/company/cpro.png" class="img-fluid lozad" alt="">
+            <img data-src="assets/img/company/honda.png" class="img-fluid lozad" alt="">
           </div>
 
           <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img data-src="assets/img/company/fhf.png" class="img-fluid lozad" alt="">
+            <img data-src="assets/img/company/samsung.png" class="img-fluid lozad" alt="">
           </div>
 
           <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img data-src="assets/img/company/youwei.png" class="img-fluid lozad" alt="">
+            <img data-src="assets/img/company/sony.png" class="img-fluid lozad" alt="">
           </div>
 
           <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img data-src="assets/img/company/dmtech.png" class="img-fluid lozad" alt="">
+            <img data-src="assets/img/company/luxshareict.png" class="img-fluid lozad" alt="">
           </div>
 
 
@@ -544,7 +355,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Địa chỉ</h3>
-              <p>Khu liền kề KCN Quế Võ, Thôn Hà Liễu, Xã Phương Liễu, Quế Võ, Bắc Ninh</p>
+              <p>{{$thongtinwebsite -> dia_chi}}</p>
             </div>
           </div>
 
@@ -552,7 +363,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email</h3>
-              <p>nguyenduycuong261286@gmail.com</p>
+              <p>{{$thongtinwebsite->email}}</p>
             </div>
           </div>
 
@@ -560,7 +371,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>SĐT</h3>
-              <p>0865.028.656</p>
+              <p>{{$thongtinwebsite->sdt}}</p>
             </div>
           </div>
 
@@ -574,14 +385,14 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nhập tên của bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="SĐT" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="SĐT" data-rule="minlen:9" data-msg="Please enter a valid phone" />
                   <div class="validate"></div>
                 </div>
               </div>

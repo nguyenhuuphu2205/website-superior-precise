@@ -6,9 +6,9 @@ use App\Models\DanhMuc;
 use App\Models\ThongTinWebsite;
 use Illuminate\Http\Request;
 use App\Models\SanPhamIn;
-use App\Models\VatLieuIn;
-use App\Models\MayIn;
+use App\Models\HinhAnhCty;
 use App\Models\Video;
+use App\Models\SanPham;
 class PageController extends Controller
 {
     function __construct()
@@ -23,51 +23,48 @@ class PageController extends Controller
     public function trangchu(){
         $danh_muc_noi_bat = DanhMuc::where('noi_bat',1)->get();
         // $sanphamins = SanPhamIn::take(4)->get();
-        $vatlieuins = VatLieuIn::all();
-        return view('pages.trangchu',['danhmucnoibat'=>$danh_muc_noi_bat,'vatlieuins'=>$vatlieuins]);
+        $hinhanhctys = HinhAnhCty::all();
+        return view('pages.trangchu',['danhmucnoibat'=>$danh_muc_noi_bat,'hinhanhctys'=>$hinhanhctys]);
     }
     public function danhmuc($id){
        
         $danhmuc = DanhMuc::find($id);
-        $mayins = MayIn::where('danh_muc',$id)->get();
+        $sanphams = SanPham::where('danh_muc',$id)->get();
   
         $danhMucCon = $danhmuc->danhMucCon;
         if(count($danhMucCon)>0){
             foreach($danhMucCon as $dmC){
                 error_log('in foreach');
-                $mayins = $mayins->merge($dmC->mayIn);
-                error_log($dmC->mayIn);
+                $sanphams = $sanphams->merge($dmC->sanPham);
+                error_log($dmC->sanPham);
               
             }
         }
-        error_log($mayins);
-        return view('pages.danhmuc',['mayins'=>$mayins,'danhmuc'=>$danhmuc]);
+        error_log($sanphams);
+        return view('pages.danhmuc',['sanphams'=>$sanphams,'danhmuc'=>$danhmuc]);
 
     }
     public function tatca(){
         $danhmuc = new DanhMuc();
-        $danhmuc->ten="Tất cả thiết bị";
-        $mayins = MayIn::all();
-        return view('pages.danhmuc',['mayins'=>$mayins,'danhmuc'=>$danhmuc]);
+        $danhmuc->ten="Tất cả sản phẩm";
+        $sanphams = SanPham::all();
+        return view('pages.danhmuc',['sanphams'=>$sanphams,'danhmuc'=>$danhmuc]);
     }
-    public function mayin($id){
-        $mayin = MayIn::find($id);
-        $iddanhmuc = $mayin->danh_muc;
+    public function sanpham($id){
+        $sanpham = SanPham::find($id);
+        $iddanhmuc = $sanpham->danh_muc;
         $danhmuc =  $danhmuc = DanhMuc::find($iddanhmuc);
-        $may_in_tuong_tu = MayIn::where('danh_muc',$iddanhmuc)->where('id','<>',$id)->take(4)->get();
-        return view('pages.mayin',['mayin'=>$mayin,'mayintuongtu'=>$may_in_tuong_tu,'danhmuc'=>$danhmuc]);
+        $san_pham_tuong_tu = sanpham::where('danh_muc',$iddanhmuc)->where('id','<>',$id)->take(4)->get();
+        return view('pages.sanpham',['sanpham'=>$sanpham,'sanphamtuongtu'=>$san_pham_tuong_tu,'danhmuc'=>$danhmuc]);
     }
-    public function vatlieuin($id){
-        $vatlieuin = VatLieuIn::find($id);
-        $sanphamins = $vatlieuin->sanPhamIn;
-        return view('pages.vatlieuin',['vatlieuin'=>$vatlieuin,'sanphamins'=>$sanphamins]);
+    public function vanphong($id){
+        $vanphong = HinhAnhCty::find($id);
+        return view('pages.vatlieuin',['vanphong'=>$vanphong]);
         
     }
-    public function vatlieuinAll(){
-        $vatlieuin = new VatLieuIn();
-        $vatlieuin->ten = "Tất cả";
-        $sanphamins = SanPhamIn::all();
-        return view('pages.vatlieuin',['vatlieuin'=>$vatlieuin,'sanphamins'=>$sanphamins]);
+    public function vanphongAll(){
+        $vanphongs = HinhAnhCty::all();
+        return view('pages.vanphong',['vanphongs'=>$vanphongs]);
     }
     public function sanphamin($id){
         $sanphamin = SanPhamIn::find($id);
@@ -76,10 +73,10 @@ class PageController extends Controller
         return view('pages.sanphamin',['sanphamin'=>$sanphamin,'vatlieuin'=>$vatlieu,'sanphamintuongtu'=>$sanphamintuongtu]);
     }
     public function timkiem(Request $request){
-        $mayins = MayIn::where('ten','like','%'.$request->tukhoa.'%')->get();
+        $sanphams = SanPham::where('ten','like','%'.$request->tukhoa.'%')->get();
         $danhmuc = new DanhMuc();
         $danhmuc->ten="Kết quả tìm kiếm cho từ khóa: ".$request->tukhoa;
-        return view('pages.danhmuc',['mayins'=>$mayins,'danhmuc'=>$danhmuc]);
+        return view('pages.danhmuc',['sanphams'=>$sanphams,'danhmuc'=>$danhmuc]);
 
     }
     public function video(){
