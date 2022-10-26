@@ -1,0 +1,209 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: web-superior-precise
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web
+  namespace: web-superior-precise
+  annotations:
+    cert-manager.io/issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - superiorprecise.com
+    secretName: web-superior-precise-tls
+  ingressClassName: nginx
+  rules:
+  - host: superiorprecise.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: web
+          servicePort: 80
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: letsencrypt-prod
+  namespace: web-superior-precise
+spec:
+  acme:
+    # The ACME server URL
+    server: https://acme-v02.api.letsencrypt.org/directory
+    # Email address used for ACME registration
+    email: phu.nguyen@mtt-software.com
+    # Name of a secret used to store the ACME account private key
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    # Enable the HTTP-01 challenge provider
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+  namespace: web-superior-precise
+spec:
+  selector:
+    app: web
+  type: ClusterIP
+  sessionAffinity: None
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  namespace: web-superior-precise
+spec:
+  selector:
+    matchLabels:
+      app: web # has to match .spec.template.metadata.labels
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: web # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: web
+        image: harbor.mttjsc.com/superior/web:latest
+        ports:
+        - containerPort: 80
+          name: http
+      imagePullSecrets:
+      - name: registry-secret-2
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  namespace: web-superior-precise
+spec:
+  selector:
+    matchLabels:
+      app: web # has to match .spec.template.metadata.labels
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: app # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: web
+        image: harbor.mttjsc.com/superior/app:latest
+        ports:
+        - containerPort: 9000
+          name: http
+      imagePullSecrets:
+      - name: registry-secret-2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+  namespace: web-superior-precise
+spec:
+  selector:
+    app: app
+  type: ClusterIP
+  sessionAffinity: None
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  ports:
+  - name: http
+    protocol: TCP
+    port: 9000
+    targetPort: 9000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+  namespace: web-superior-precise
+spec:
+  selector:
+    app: db
+  type: ClusterIP
+  sessionAffinity: None
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  ports:
+  - name: http
+    protocol: TCP
+    port: 3306
+    targetPort: 3306
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: db
+  namespace: web-superior-precise
+spec:
+  selector:
+    matchLabels:
+      app: db # has to match .spec.template.metadata.labels
+  serviceName: "db"
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: db # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: db
+        image: mysql:5.7
+        ports:
+        - containerPort: 3306
+          name: db
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/mysql
+        env:
+        - name: "MYSQL_DATABASE"
+          value: "bobbin"
+        - name: "MYSQL_ROOT_PASSWORD"
+          value: "passwordBobbin"
+        - name: "MYSQL_PASSWORD"
+          value: "passwordBobbin"
+        - name: "MYSQL_USER"
+          value: "bobbin"
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 5Gi
+---
+kind: Secret
+apiVersion: v1
+metadata:
+  name: registry-secret-2
+  namespace: web-superior-precise
+data:
+  .dockerconfigjson: >-
+    eyJhdXRocyI6eyJoYXJib3IubXR0anNjLmNvbSI6eyJ1c2VybmFtZSI6Ims4cyIsInBhc3N3b3JkIjoiMTIzNDU2YUBBIiwiYXV0aCI6ImF6aHpPakV5TXpRMU5tRkFRUT09In19fQ==
+type: kubernetes.io/dockerconfigjson
+---
