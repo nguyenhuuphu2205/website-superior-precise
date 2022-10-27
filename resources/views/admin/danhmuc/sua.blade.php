@@ -53,6 +53,10 @@
                             @if($danhmuc->noi_bat == 1) checked="" @endif>Nổi bật
                         </label>
                     </div>
+                    <div class="form-group">
+                        <label>Thứ tự hiển thị trên trang chủ</label>
+                        <input class="form-control" type="number" name="STT" placeholder="Nhâp STT" value="{{$danhmuc->stt}}" required />
+                    </div>
 
                     <button type="submit" class="btn btn-default">Sửa</button>
                     <button type="reset" class="btn btn-default">Nhâp lại</button>

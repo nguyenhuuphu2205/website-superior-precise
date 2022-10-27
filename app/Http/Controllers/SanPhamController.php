@@ -28,6 +28,7 @@ class SanPhamController extends Controller
         $san_pham -> ma_san_pham = $request->MaSanPham;
         $san_pham -> mo_ta = $request->MoTa;
         $san_pham ->danh_muc = $request->DanhMucCha;
+        $san_pham ->stt = $request->STT;
         $file = $request ->file('AnhDaiDien');
         $name = $file->getClientOriginalName();
         $Hinh =  Str::random(4)."_".$name."_".$san_pham->ten_khong_dau;
@@ -59,6 +60,7 @@ class SanPhamController extends Controller
         $san_pham->ma_san_pham = $request->MaSanPham;
         $san_pham->mo_ta = $request->MoTa;
         $san_pham->danh_muc = $request->DanhMucCha;
+        $san_pham->stt = $request->STT;
         if($request->hasFile('AnhDaiDien'))
         {
             $this->validate($request,

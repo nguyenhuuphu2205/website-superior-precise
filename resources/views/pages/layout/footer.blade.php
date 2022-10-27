@@ -7,7 +7,7 @@
           <div class="col-lg-6">
             <h4 class="text-primary">Đăng ký nhận chương trình khuyến mại</h4>
             <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> -->
-            <form action="" method="post">
+            <form action="" method="get">
               <input type="email" name="email" placeholder="Nhập email"><input type="submit" value="Đăng ký">
             </form>
           </div>
@@ -41,7 +41,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="danh-muc/tat-ca">Sản phẩm</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="trangchu#vanphong">Văn phòng</a></li>
 	      <li><i class="bx bx-chevron-right"></i> <a href="trangchu#khachhang">Khách hàng</a></li>
-		 <li><i class="bx bx-chevron-right"></i> <a href="video-san-xuat-in-an">Video</a></li>
+		 <li><i class="bx bx-chevron-right"></i> <a href="video-san-xuat">Video</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="trangchu#contact">Liên hệ</a></li>
               
             </ul>

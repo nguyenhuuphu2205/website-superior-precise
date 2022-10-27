@@ -86,7 +86,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function (){
  Route::get('van-phong/tat-ca',[PageController::class,'vanphongAll']);
  Route::get('van-phong/{id}/{ten_khong_dau}',[PageController::class,'vanphong']);
  Route::post('tim-kiem',[PageController::class,'timkiem']);
- Route::get('video-san-xuat-in-an',[PageController::class,'video']);
+ Route::get('video-san-xuat',[PageController::class,'video']);
 
 
 

@@ -22,6 +22,7 @@
                         <th>Danh mục</th>
                         <th>Tên</th>
                         <th>Mã</th>
+                        <th>STT hiển thị</th>
                         <th>Ngày tạo</th>
                         <th>Ngày cập nhật</th>
                         <th>Xóa</th>
@@ -40,6 +41,7 @@
                         <td>
                          {{$cc->ma_san_pham}}
                         </td>
+                        <td>{{$cc->stt}}</td>
                         <td>{{$cc->created_at}}</td>
                         <td>{{$cc->updated_at}}</td>
                         <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/sanpham/xoa/{{$cc->id}}"> Xóa</a></td>

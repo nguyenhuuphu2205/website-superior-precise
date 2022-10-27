@@ -23,6 +23,7 @@
                         <th>Tên Danh Mục</th>
                         <th>Danh Mục Cha</th>
                         <th>Nổi bật</th>
+                        <th>STT trên trang chủ</th>
                         <th>Xóa</th>
                         <th>Sửa</th>
                     </tr>
@@ -43,6 +44,7 @@
                             @endif
                             </td>
                         <td>{{$dm->noi_bat ==1 ? "Có":"Không "}}</td>
+                        <td>{{$dm->stt}}</td>
 
                             <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/danhmuc/xoa/{{$dm->id}}"> Xóa</a></td>
                             <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/danhmuc/sua/{{$dm->id}}">Sửa</a></td>

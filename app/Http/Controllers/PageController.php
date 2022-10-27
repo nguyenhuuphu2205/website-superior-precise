@@ -21,7 +21,7 @@ class PageController extends Controller
     }
     
     public function trangchu(){
-        $danh_muc_noi_bat = DanhMuc::where('noi_bat',1)->get();
+        $danh_muc_noi_bat = DanhMuc::where('noi_bat',1)->orderBy('stt','asc')->get();
         // $sanphamins = SanPhamIn::take(4)->get();
         $hinhanhctys = HinhAnhCty::all();
         return view('pages.trangchu',['danhmucnoibat'=>$danh_muc_noi_bat,'hinhanhctys'=>$hinhanhctys]);

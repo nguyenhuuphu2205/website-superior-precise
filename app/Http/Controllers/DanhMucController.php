@@ -19,6 +19,7 @@ class DanhMucController extends Controller
         $danh_muc->ten_khong_dau = changeTitle($request->Ten);
         $danh_muc->danh_muc_cha = $request->danh_muc_cha;
         $danh_muc->noi_bat = $request->NoiBat;
+        $danhmuc->stt  = $request->STT;
         $danh_muc->save();
         return redirect('admin/danhmuc/them')->with('thongbao','Thêm thành công');
     }
@@ -33,6 +34,7 @@ class DanhMucController extends Controller
         $danhmuc->ten_khong_dau = changeTitle($request->Ten);
         $danhmuc->danh_muc_cha = $request->danh_muc_cha;
         $danhmuc->noi_bat = $request->NoiBat;
+        $danhmuc->stt = $request->STT;
         $danhmuc->save();
         return redirect('admin/danhmuc/sua/'.$id)->with('thongbao','Sửa thành công');
     }

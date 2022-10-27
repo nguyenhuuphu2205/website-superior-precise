@@ -58,6 +58,10 @@
                             <div><img src="upload/sanpham/{{$sanpham->hinh_anh}}" style="width: 100px;"></div>
                             <input type="file" name="AnhDaiDien"  accept="image/*" >
                         </div>
+                        <div class="form-group">
+                            <label>Thứ tự hiển thị</label>
+                            <input class="form-control" name="STT" type="number" placeholder="Nhập stt " value="{{$sanpham->stt}}"  required/>
+                        </div>
                         <button type="submit" class="btn btn-default">Sửa</button>
                         <button type="reset" class="btn btn-default">Nhập lại</button>
                     </form>

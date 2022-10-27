@@ -2,7 +2,7 @@
  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto pt-1" style="font-size: 1rem;">
-        <i class="icofont-phone"></i> Hotline: {{$thongtinwebsite->sdt}},{{$thongtinwebsite->sdt2}} | Zalo: {{$thongtinwebsite->zalo}}
+        <i class="icofont-phone"></i> Hotline: {{$thongtinwebsite->sdt}}, {{$thongtinwebsite->sdt2}} | Zalo: {{$thongtinwebsite->zalo}}
         <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">{{$thongtinwebsite->email}}</a>
        
       </div>
@@ -20,7 +20,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <img data-src="assets/img/logo.png" width="70px" class="img-fluid lozad"/>
-<h1 class="logo mr-auto"><a href="trangchu">Superior Precise<span>.</span></a> <br/> <a style="font-size: 0.8rem; color: red; text-shadow: saddlebrown;" class="d-block"><br>Hotline: {{$thongtinwebsite->sdt}}</a></h1>
+<h1 class="logo mr-auto"><a href="trangchu">Superior Precise<span>.</span></a> <br/> <a style="font-size: 0.8rem; color: red; text-shadow: saddlebrown;" class="d-block"><br>Hotline: {{$thongtinwebsite->sdt}} | {{$thongtinwebsite->sdt2}}</a></h1>
       
      
     
@@ -56,7 +56,7 @@
             </ul>
           </li>
           <li><a href="trangchu#vanphong">Văn phòng</a></li>
-          <li><a href="video-san-xuat-in-an">Video</a></li>
+          <li><a href="video-san-xuat">Video</a></li>
           <li><a href="trangchu#khachhang">Khách hàng</a></li>
          
           <!-- <li><a href="#team">Thành viên</a></li> -->
