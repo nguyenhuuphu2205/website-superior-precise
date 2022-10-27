@@ -14,6 +14,7 @@ class ThongTinWebsiteController extends Controller
     public function postSua(Request $request){
         $thong_tin_website = ThongTinWebsite::first();
         $thong_tin_website->sdt = $request->SDT;
+        $thong_tin_website->sdt2 = $request->SDT2;
         $thong_tin_website->dia_chi = $request->DiaChi;
         $thong_tin_website->email = $request->Email;
         $thong_tin_website->zalo = $request->Zalo;

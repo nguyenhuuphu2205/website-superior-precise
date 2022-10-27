@@ -372,6 +372,7 @@
               <i class="bx bx-phone-call"></i>
               <h3>SĐT</h3>
               <p>{{$thongtinwebsite->sdt}}</p>
+              <p>{{$thongtinwebsite->sdt2}}</p>
             </div>
           </div>
 

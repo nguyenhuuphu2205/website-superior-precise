@@ -16,6 +16,7 @@ class CreateThongTinWebsiteTable extends Migration
         Schema::create('thong_tin_website', function (Blueprint $table) {
             $table->id();
             $table->string('sdt');
+            $table->string('sdt2');
             $table->string('email');
             $table->string('dia_chi');
             $table->text('mo_ta');

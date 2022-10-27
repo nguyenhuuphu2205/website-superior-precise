@@ -31,6 +31,10 @@
                             <input class="form-control" name="SDT" placeholder="Nhập số SDT"  value="{{$thongtinwebsite->sdt}}" required/>
                         </div>
                         <div class="form-group">
+                            <label>SDT 2</label>
+                            <input class="form-control" name="SDT2" placeholder="Nhập số SDT"  value="{{$thongtinwebsite->sdt2}}" required/>
+                        </div>
+                        <div class="form-group">
                             <label>Địa chỉ</label>
                             <input class="form-control" name="DiaChi" placeholder="Nhập địa chỉ"  required value="{{$thongtinwebsite->dia_chi}}"/>
                         </div>

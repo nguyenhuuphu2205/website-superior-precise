@@ -27,6 +27,7 @@
               <br>
               <strong>Địa chỉ</strong>: {{$thongtinwebsite->dia_chi}} <br>
 	      <strong>SĐT:</strong> {{$thongtinwebsite->sdt}}<br>
+        <strong>SĐT 2:</strong> {{$thongtinwebsite->sdt2}}<br>
 		<strong>Zalo:</strong> {{$thongtinwebsite->zalo}}<br>
               <strong>Email:</strong>{{$thongtinwebsite->email}}<br>
             </p>

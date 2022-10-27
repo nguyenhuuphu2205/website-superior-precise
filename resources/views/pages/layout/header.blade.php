@@ -2,7 +2,7 @@
  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto pt-1" style="font-size: 1rem;">
-        <i class="icofont-phone"></i> Hotline: {{$thongtinwebsite->sdt}} | Zalo: {{$thongtinwebsite->zalo}}
+        <i class="icofont-phone"></i> Hotline: {{$thongtinwebsite->sdt}},{{$thongtinwebsite->sdt2}} | Zalo: {{$thongtinwebsite->zalo}}
         <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">{{$thongtinwebsite->email}}</a>
        
       </div>
