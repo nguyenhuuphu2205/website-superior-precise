@@ -83,7 +83,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: web
-        image: harbor.mttjsc.com/superior/web:latest
+        image: harbor.mttjsc.com/superior/web:2.3
         ports:
         - containerPort: 80
           name: http
@@ -98,7 +98,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: web # has to match .spec.template.metadata.labels
+      app: app # has to match .spec.template.metadata.labels
   replicas: 1 # by default is 1
   template:
     metadata:
@@ -108,7 +108,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: web
-        image: harbor.mttjsc.com/superior/app:latest
+        image: harbor.mttjsc.com/superior/app:3.1
         ports:
         - containerPort: 9000
           name: http
@@ -131,8 +131,8 @@ spec:
   ports:
   - name: http
     protocol: TCP
-    port: 9000
-    targetPort: 9000
+    port: 8000  
+    targetPort: 8000
 ---
 apiVersion: v1
 kind: Service
@@ -142,7 +142,7 @@ metadata:
 spec:
   selector:
     app: db
-  type: ClusterIP
+  type: NodePort
   sessionAffinity: None
   sessionAffinityConfig:
     clientIP:
