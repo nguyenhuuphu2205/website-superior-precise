@@ -19,7 +19,7 @@ class DanhMucController extends Controller
         $danh_muc->ten_khong_dau = changeTitle($request->Ten);
         $danh_muc->danh_muc_cha = $request->danh_muc_cha;
         $danh_muc->noi_bat = $request->NoiBat;
-        $danhmuc->stt  = $request->STT;
+        $danh_muc->stt  = $request->STT;
         $danh_muc->save();
         return redirect('admin/danhmuc/them')->with('thongbao','Thêm thành công');
     }

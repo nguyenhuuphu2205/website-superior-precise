@@ -20,6 +20,7 @@
                     <tr align="center">
                         <th>ID</th>
                         <th>Tên</th>
+                        <th>Thứ tự hiển thị trên trang chủ</th>
                         <th>Xóa</th>
                         <th>Sửa</th>
                     </tr>
@@ -32,6 +33,7 @@
                             <div>
                         <img src="upload/hinhanhcty/{{$cc->hinh_anh}}" style="width: 100px;"></div>
                         </td>
+                        <td>{{$cc->stt}}</td>
                         <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/hinhanhcty/xoa/{{$cc->id}}"> Xóa</a></td>
                         <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/hinhanhcty/sua/{{$cc->id}}">Sửa</a></td>
                     </tr>

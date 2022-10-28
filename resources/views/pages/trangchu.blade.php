@@ -190,7 +190,11 @@
           }
           $i++;
           ?>
+          @if(count($danhmuc->sanPham) <= 3)
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" >
+          @else
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" >
+          @endif
             <div class="member">
               <div class="member-img" >
               <img data-src="upload/sanpham/{{$may->hinh_anh}}" class="img-fluid lozad" alt="{{$may->ten_khong_dau}}" style="height: 300px; width:100%">

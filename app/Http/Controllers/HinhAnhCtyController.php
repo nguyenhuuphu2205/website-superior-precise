@@ -24,6 +24,7 @@ class HinhAnhCtyController extends Controller
         }
         $file ->move('upload/hinhanhcty/',$Hinh);
         $hinhanhcty -> hinh_anh = $Hinh;
+        $hinhanhcty -> stt = $request->STT;
         $hinhanhcty->save();
         return redirect('admin/hinhanhcty/them')->with('thongbao','Thêm thành công');
 
@@ -57,6 +58,7 @@ class HinhAnhCtyController extends Controller
             $file ->move('upload/hinhanhcty/',$Hinh);
             $hinhanhcty -> hinh_anh = $Hinh;
         }
+        $hinhanhcty->stt = $request->STT;
         $hinhanhcty->save();
         return redirect('admin/hinhanhcty/sua/'.$id)->with('thongbao','Sửa thành công');
     }

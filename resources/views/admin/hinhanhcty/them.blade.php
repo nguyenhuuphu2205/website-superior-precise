@@ -34,6 +34,10 @@
                             <label>Hình ảnh</label>
                             <input type="file" name="AnhDaiDien" required accept="image/*">
                         </div>
+                        <div class="form-group">
+                            <label>Thứ tự hiển thị trên trang chủ </label>
+                            <input class="form-control" name="STT" type="number" placeholder="Nhập STT" value="99"  required/>
+                        </div>
                       
                         <button type="submit" class="btn btn-default">Thêm</button>
                         <button type="reset" class="btn btn-default">Nhập lại</button>

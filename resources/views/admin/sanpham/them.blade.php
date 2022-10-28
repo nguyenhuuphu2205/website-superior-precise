@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Máy in/Thiết bị
+                    <h1 class="page-header">Sản phẩm/Thiết bị
                         <small>Thêm</small>
                     </h1>
                     @if(count($errors) >0)
