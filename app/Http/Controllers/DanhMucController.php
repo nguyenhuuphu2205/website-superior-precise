@@ -44,8 +44,8 @@ class DanhMucController extends Controller
     }
     public function xoa($id){
         $danhmuc = DanhMuc::find($id);
-        if(count($danhmuc->mayIn)>0 ){
-            return redirect('admin/danhmuc/danhsach')->with('thongbao','Cần xóa tất cả máy in thuộc danh mục này trước');
+        if(count($danhmuc->sanPham)>0 ){
+            return redirect('admin/danhmuc/danhsach')->with('thongbao','Cần xóa tất cả sản phẩm thuộc danh mục này trước');
         }
         if(count($danhmuc->danhMucCon)>0){
             return redirect('admin/danhmuc/danhsach')->with('thongbao','Cần xóa tất cả danh mục con thuộc danh mục này trước');
